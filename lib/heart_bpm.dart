@@ -170,7 +170,7 @@ class _HeartBPPView extends State<HeartBPMDialog> {
 
       // 4. set torch to ON and start image stream
       Future.delayed(Duration(milliseconds: 500))
-          .then((value) => _controller!.setFlashMode(FlashMode.torch));
+          .then((value) => _controller!.setFlashMode(FlashMode.off));
 
       // 5. register image streaming callback
       _controller!.startImageStream((image) {
